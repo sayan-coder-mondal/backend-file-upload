@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <a href="/" class="add_btn">
+        <button>Upload Products</button>
+    </a>
+
+
+    <h1>All Products</h1>
+    <div class="container">
+        {{#each allProducts}}
+        <div class="box">
+            <img src="{{this.image}}" alt="" srcset="" width="100px">
+            <h3>{{this.productName}}</h3>
+            <p>Price: {{this.price}}</p>
+        </div>
+        {{/each}}
+    </div>
+</body>
+</html>

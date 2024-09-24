@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Upload</title>
+</head>
+
+<body>
+    <a href="/products" class="add_btn">
+        <button>All Products</button>
+    </a>
+
+
+    <form action="/product" method="post" enctype="multipart/form-data">
+
+        <p>Product Name:</p>
+        <textarea name="productName" class="input" id="productName" required maxlength="300"></textarea>
+
+        <p>Price:</p>
+        <input type="number" name="price" class="input" id="price" required min="0" max="10000000">
+
+        <p>Product Image:</p>
+        <input type="file" name="image" class="input">
+
+        <input type="submit" id="submit" value="Add product">
+    </form>
+</body>
+
+</html>
